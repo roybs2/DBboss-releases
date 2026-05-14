@@ -39,12 +39,12 @@ Get the newest build from the **Releases** page:
 
 <https://github.com/roybs2/DBboss-releases/releases>
 
-For most testers, download the `.dmg` file, open it, then drag `DBboss.app` to your Applications folder.
+For most testers, download the `.dmg` file, open it, then drag `DBboss.app` onto the `Applications` shortcut inside the DMG window.
 
 ## Install
 
 1. Open the downloaded `DBboss-<version>.dmg`.
-2. Drag `DBboss.app` into `Applications`.
+2. Drag `DBboss.app` onto the `Applications` shortcut in the DMG window.
 3. Open DBboss from `Applications`.
 4. Add a PostgreSQL connection and start working.
 
