@@ -1,5 +1,121 @@
-# DBoss Releases
+# DBoss
 
-Public release-only repository for DBoss installer downloads.
+<p align="center">
+  <img src="https://img.shields.io/badge/macOS-14%2B-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 14+" />
+  <img src="https://img.shields.io/badge/PostgreSQL-Client-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL Client" />
+  <img src="https://img.shields.io/badge/Native-SwiftUI-FF6A00?style=for-the-badge&logo=swift&logoColor=white" alt="Native SwiftUI" />
+</p>
 
-This repository intentionally does not contain the DBoss source code. Download installer assets from the Releases page.
+<p align="center">
+  <strong>A native macOS workspace for PostgreSQL.</strong><br />
+  Browse schemas, run SQL, inspect tables, and keep common database work close at hand.
+</p>
+
+<p align="center">
+  <a href="https://github.com/roybs2/DBboss-releases/releases"><img src="https://img.shields.io/badge/Download-Releases-34C759?style=for-the-badge" alt="Download DBoss" /></a>
+</p>
+
+---
+
+## What DBoss Does
+
+DBoss is a desktop PostgreSQL client built for macOS. It is designed for developers who want a fast, focused database workspace without leaving a native Mac app.
+
+With DBoss you can:
+
+- Save and manage PostgreSQL connections.
+- Browse databases, schemas, tables, and columns.
+- Open SQL tabs and run queries.
+- Run the current SQL statement or the whole editor.
+- Inspect query results in a grid.
+- Browse table data with paging, search, and filters.
+- Export result data as CSV, JSON, or SQL insert statements.
+- Keep multiple database work tabs open in one workspace.
+- Use a clean macOS interface with native menus, settings, and keyboard shortcuts.
+
+## Download
+
+Get the newest build from the **Releases** page:
+
+<https://github.com/roybs2/DBboss-releases/releases>
+
+For most testers, download the `.dmg` file, open it, then drag `DBoss.app` to your Applications folder.
+
+## Install
+
+1. Open the downloaded `DBoss-<version>.dmg`.
+2. Drag `DBoss.app` into `Applications`.
+3. Open DBoss from `Applications`.
+4. Add a PostgreSQL connection and start working.
+
+### macOS Security Notice
+
+Current tester builds are not Apple Developer ID notarized yet. macOS may show a warning the first time you open the app.
+
+If that happens:
+
+1. Open Finder.
+2. Go to `Applications`.
+3. Right-click `DBoss.app`.
+4. Choose **Open**.
+5. Confirm that you want to open it.
+
+This is expected for early tester builds distributed outside the Mac App Store.
+
+## Updating
+
+For now, updates are manual:
+
+1. Download the newest release.
+2. Quit DBoss if it is running.
+3. Replace the old `DBoss.app` in `Applications` with the new one.
+4. Open DBoss again.
+
+Your settings and saved app data should remain in place when replacing the app.
+
+## Your Data
+
+DBoss stores app data outside the app bundle, so replacing `DBoss.app` does not normally remove your saved data.
+
+Typical macOS locations:
+
+- App: `/Applications/DBoss.app`
+- App data: `~/Library/Application Support/DBoss/`
+- Preferences: `~/Library/Preferences/com.royb.DBoss.plist`
+
+Keep this in mind if you ever want to fully remove DBoss and its local data.
+
+## Privacy And Network Access
+
+DBoss connects to the PostgreSQL servers you configure. It does not need an account for this release repository, and this release repository does not contain the app source code.
+
+Connection details are stored locally on your Mac. Be careful when using tester builds with production databases, and use read-only database users when possible.
+
+## Checksums
+
+Each release may include a `SHA256SUMS-<version>.txt` file. You can use it to verify that your downloaded `.dmg` or `.zip` matches the published artifact.
+
+Example:
+
+```bash
+shasum -a 256 DBoss-<version>.dmg
+```
+
+Compare the output with the checksum file attached to the release.
+
+## About This Repository
+
+This is the public, release-only repository for DBoss downloads.
+
+It intentionally contains only:
+
+- Installer files
+- Release notes
+- Checksums
+- Public download instructions
+
+The DBoss source code is not published here.
+
+## Author
+
+DBoss was written by **Roy B.**
