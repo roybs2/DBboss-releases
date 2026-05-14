@@ -1,4 +1,4 @@
-# DBoss
+# DBboss
 
 <p align="center">
   <img src="https://img.shields.io/badge/macOS-14%2B-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="macOS 14+" />
@@ -12,16 +12,16 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/roybs2/DBboss-releases/releases"><img src="https://img.shields.io/badge/Download-Releases-34C759?style=for-the-badge" alt="Download DBoss" /></a>
+  <a href="https://github.com/roybs2/DBboss-releases/releases"><img src="https://img.shields.io/badge/Download-Releases-34C759?style=for-the-badge" alt="Download DBboss" /></a>
 </p>
 
 ---
 
-## What DBoss Does
+## What DBboss Does
 
-DBoss is a desktop PostgreSQL client built for macOS. It is designed for developers who want a fast, focused database workspace without leaving a native Mac app.
+DBboss is a desktop PostgreSQL client built for macOS. It is designed for developers who want a fast, focused database workspace without leaving a native Mac app.
 
-With DBoss you can:
+With DBboss you can:
 
 - Save and manage PostgreSQL connections.
 - Browse databases, schemas, tables, and columns.
@@ -39,13 +39,13 @@ Get the newest build from the **Releases** page:
 
 <https://github.com/roybs2/DBboss-releases/releases>
 
-For most testers, download the `.dmg` file, open it, then drag `DBoss.app` to your Applications folder.
+For most testers, download the `.dmg` file, open it, then drag `DBboss.app` to your Applications folder.
 
 ## Install
 
-1. Open the downloaded `DBoss-<version>.dmg`.
-2. Drag `DBoss.app` into `Applications`.
-3. Open DBoss from `Applications`.
+1. Open the downloaded `DBboss-<version>.dmg`.
+2. Drag `DBboss.app` into `Applications`.
+3. Open DBboss from `Applications`.
 4. Add a PostgreSQL connection and start working.
 
 ### macOS Security Notice
@@ -56,7 +56,7 @@ If that happens:
 
 1. Open Finder.
 2. Go to `Applications`.
-3. Right-click `DBoss.app`.
+3. Right-click `DBboss.app`.
 4. Choose **Open**.
 5. Confirm that you want to open it.
 
@@ -67,27 +67,27 @@ This is expected for early tester builds distributed outside the Mac App Store.
 For now, updates are manual:
 
 1. Download the newest release.
-2. Quit DBoss if it is running.
-3. Replace the old `DBoss.app` in `Applications` with the new one.
-4. Open DBoss again.
+2. Quit DBboss if it is running.
+3. Replace the old `DBboss.app` in `Applications` with the new one.
+4. Open DBboss again.
 
 Your settings and saved app data should remain in place when replacing the app.
 
 ## Your Data
 
-DBoss stores app data outside the app bundle, so replacing `DBoss.app` does not normally remove your saved data.
+DBboss stores app data outside the app bundle, so replacing `DBboss.app` does not normally remove your saved data.
 
 Typical macOS locations:
 
-- App: `/Applications/DBoss.app`
-- App data: `~/Library/Application Support/DBoss/`
-- Preferences: `~/Library/Preferences/com.royb.DBoss.plist`
+- App: `/Applications/DBboss.app`
+- App data: `~/Library/Application Support/DBboss/`
+- Preferences: `~/Library/Preferences/com.royb.DBboss.plist`
 
-Keep this in mind if you ever want to fully remove DBoss and its local data.
+Keep this in mind if you ever want to fully remove DBboss and its local data.
 
 ## Privacy And Network Access
 
-DBoss connects to the PostgreSQL servers you configure. It does not need an account for this release repository, and this release repository does not contain the app source code.
+DBboss connects to the PostgreSQL servers you configure. It does not need an account for this release repository, and this release repository does not contain the app source code.
 
 Connection details are stored locally on your Mac. Be careful when using tester builds with production databases, and use read-only database users when possible.
 
@@ -98,14 +98,14 @@ Each release may include a `SHA256SUMS-<version>.txt` file. You can use it to ve
 Example:
 
 ```bash
-shasum -a 256 DBoss-<version>.dmg
+shasum -a 256 DBboss-<version>.dmg
 ```
 
 Compare the output with the checksum file attached to the release.
 
 ## About This Repository
 
-This is the public, release-only repository for DBoss downloads.
+This is the public, release-only repository for DBboss downloads.
 
 It intentionally contains only:
 
@@ -114,8 +114,8 @@ It intentionally contains only:
 - Checksums
 - Public download instructions
 
-The DBoss source code is not published here.
+The DBboss source code is not published here.
 
 ## Author
 
-DBoss was written by **Roy B.**
+DBboss was written by **Roy B.**
