@@ -52,7 +52,7 @@ For most testers, download the `.dmg` file, open it, then drag `DBboss.app` to y
 
 Current tester builds are not Apple Developer ID notarized yet. macOS may show a warning the first time you open the app.
 
-If that happens:
+If that happens, first try:
 
 1. Open Finder.
 2. Go to `Applications`.
@@ -60,7 +60,14 @@ If that happens:
 4. Choose **Open**.
 5. Confirm that you want to open it.
 
-This is expected for early tester builds distributed outside the Mac App Store.
+If macOS still only shows **Done**, run this once in Terminal after moving the app to Applications:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/DBboss.app
+open /Applications/DBboss.app
+```
+
+This is expected for early tester builds distributed outside the Mac App Store. The fully polished fix is Apple Developer ID signing and notarization.
 
 ## Updating
 
